@@ -79,17 +79,19 @@ class VersionCheckerUtilsImpl @Inject constructor(
 
         if (currentVersionElements.isNullOrEmpty()) {
             // current version scrambled?!
-            return VersionResult.NEWER_VERSION_AVAILABLE
+            // return VersionResult.NEWER_VERSION_AVAILABLE
+            return VersionResult.SAME_VERSION
         }
 
         newVersionElements.take(3).forEachIndexed { i, newElem ->
             val currElem: Int = currentVersionElements.getOrNull(i)
-                ?: return VersionResult.NEWER_VERSION_AVAILABLE
+                // ?: return VersionResult.NEWER_VERSION_AVAILABLE
+                ?: return VersionResult.SAME_VERSION
 
             (newElem - currElem).let {
                 when {
-                    it > 0 -> return VersionResult.NEWER_VERSION_AVAILABLE
-                    it < 0 -> return VersionResult.OLDER_VERSION
+                    it > 0 -> return VersionResult.SAME_VERSION
+                    it < 0 -> return VersionResult.SAME_VERSION
                     else   -> Unit
                 }
             }
