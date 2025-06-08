@@ -6,6 +6,7 @@
     <string name="previous_button">上一个</string>
     <string name="nav_setupwizard">设置向导</string>
     <string name="setupwizard_finish">完成</string>
+    <string name="welcome">欢迎</string>
     <string name="welcometosetupwizard">欢迎使用设置向导。它将指导您完成设置过程 \n</string>
     <string name="end_user_license_agreement">最终用户许可协议</string>
     <string name="end_user_license_agreement_text">不得用于制定医疗决定。在适用法律允许的范围内，对该程序不作任何保证。除非另有书面授权的版权所有者和/或其他方均按原样提供程序，不附带明示或暗示的任何形式的担保，包括但不限于对适销性和适用于特定用途的默示担保。对您的程序的质量和性能的完整风险。如果程序存在缺陷，您应承担所有必要维修，修理或更正的代价.</string>
@@ -18,12 +19,15 @@
     <string name="permission">权限</string>
     <string name="need_system_window_permission">应用程序需要悬浮窗权限用于发送通知。</string>
     <string name="need_location_permission">应用程序需要定位权限，才能进行蓝牙扫描及WIFI识别。</string>
+    <string name="need_background_location_permission">应用程序需要后台地理位置权限，才能进行自动协调</string>
     <string name="need_storage_permission">应用程序需要文件存储权限，才能存储日志文件及导出设置。</string>
     <string name="askforpermission">请求权限</string>
+    <string name="need_whitelisting">%1$s 需要电池优化白名单才能获得适当的性能</string>
     <string name="storedsettingsfound">发现曾经保存过的设置</string>
     <string name="master_password_summary">主密码用于备份和安全性加密，它优先于其他功能模块的密码，请牢记它或储存在安全的地方。</string>
     <string name="current_master_password">当前主密码</string>
     <string name="common_values">\n选择您三餐的最大碳水值和最大胰岛素剂量\n</string>
+    <string name="syncinfotext">将数据同步到云端。您现在可以跳过这一部分，但在设置 Nightscout 或 Tidepool 客户端之前，您将无法通过目标。</string>
     <string name="status">状态:</string>
     <string name="patient_name">患者名称</string>
     <string name="patient_name_summary">请提供患者姓名或昵称来区分多个设置</string>
@@ -31,6 +35,7 @@
     <string name="profile">配置文件</string>
     <string name="doprofileswitch">配置文件切换</string>
     <string name="exitwizard">跳过设置向导</string>
+    <string name="setupwizard_loop_description">按下面的按钮启用 AAPS 来建议/进行基本更改</string>
     <string name="setupwizard_sensitivity_description">灵敏度插件用于灵敏度检测和碳水化合物计算。有关详细信息, 请访问:</string>
     <string name="setupwizard_aps_description">从可用算法中选择一个。 他们从最旧到最新排序。 较新的算法通常更强大，更冒险。 因此，如果你是新的闭环使用者，你可能会从AMA算法开始，而不是最新的。 不要忘记在使用之前阅读OpenAPS文档并对其进行配置。</string>
     <string name="setupwizard_pump_waiting_for_riley_link_connection">在下面配置你的RileyLink 。选择RileLink后，一旦RileLink状态为“已连接”，就可以继续安装。这可能需要一分钟。\n</string>
@@ -40,30 +45,39 @@
     <string name="readstatus">读取状态</string>
     <string name="data_choices">数据选择</string>
     <string name="fabric_upload">通过Fabric上传</string>
+    <string name="unattended_settings_export_summary">启用此功能会将您的密码安全地存储在您的手机上</string>
     <string name="identification">身份识别 (email邮件地址, FaceBook账号 或 Discord账号等等)</string>
     <string name="request">请求</string>
     <string name="apsmode_title">APS模式</string>
     <string name="setupwizard_preferred_aps_mode">首选的APS模式</string>
+    <string name="error_asking_for_permissions">请求权限时出错</string>
     <string name="alert_dialog_permission_battery_optimization_failed">此设备似乎不支持电池优化白名单 - 您可能会遇到性能问题。</string>
     <!--    ConfigBuilder-->
     <string name="config_builder">配置生成器</string>
     <string name="configbuilder_pump">胰岛素泵</string>
+    <string name="configbuilder_pump_description">您想将哪种泵与 AAPS 一起使用？</string>
     <string name="configbuilder_profile">配置文件</string>
+    <string name="configbuilder_profile_description">AAPS 应使用哪个配置文件？</string>
     <string name="configbuilder_aps">APS</string>
     <string name="configbuilder_aps_description">哪个 APS 算法应该用于治疗调整？</string>
     <string name="configbuilder_general">一般</string>
     <string name="configbuilder_general_description">这些是一些一般的插件, 你可能会觉得有用。</string>
     <string name="configbuilder_sync">同步</string>
+    <string name="configbuilder_sync_description">数据上传和同步插件。</string>
     <string name="configbuilder_constraints_description">应用了哪些约束条件？</string>
     <string name="configbuilder_loop">闭环</string>
+    <string name="configbuilder_loop_description">用它来激活 AAPS 的闭环集成。</string>
     <string name="configbuilder_insulin_description">你使用哪种类型的胰岛素？</string>
     <string name="configbuilder_bgsource">血糖来源</string>
+    <string name="configbuilder_smoothing_description">选择平滑算法</string>
     <string name="configbuilder_sensitivity">灵敏度检测</string>
     <string name="configbuilder_sensitivity_description">应使用哪一种灵敏度算法？</string>
     <string name="config_builder_shortname">配置</string>
     <string name="description_config_builder">用于配置活动插件</string>
+    <string name="allow_hardware_pump_text">注意：如果您激活并连接到硬件泵，AAPS 会将基础设置从配置文件复制到泵，覆盖泵上存储的现有基础速率。确保 AAPS 中的基础设置正确。如果您不确定或不想覆盖泵上的基础设置，请按取消并稍后重复切换到泵。</string>
     <string name="a11y_open_settings">打开设置</string>
     <!--ImportExport-->
+    <string name="collapse_category">返回目录</string>
     <string name="nav_preferences">参数选项</string>
     <string name="password_preferences_encrypt_prompt">请您输入主密码，该密码将用于加密导出的首选项配置。</string>
     <string name="preferences_export_canceled">导出已取消！首选项未导出！</string>
@@ -74,6 +88,7 @@
     <string name="check_preferences_import_btn">导入</string>
     <string name="check_preferences_import_anyway_btn">继续导入（危险！）</string>
     <string name="import_setting">导入配置</string>
+    <string name="select_aaps_directory">选择 AAPS 目录用于存储导出、配置等。</string>
     <string name="check_preferences_before_import">请在导入之前检查首选项：</string>
     <string name="check_preferences_cannot_import">无法导入首选项！</string>
     <string name="check_preferences_dangerous_import">不应导入首选项 !</string>
@@ -84,15 +99,19 @@
     <string name="different_password_used">此文件已导出并使用不同的主密码进行加密。 提供旧的主密码以解密文件。</string>
     <string name="master_password_will_be_replaced">成功导入后，当前主密码将替换为旧主密码！</string>
     <string name="exported">参数选项导出了</string>
+    <string name="exported_failed">参数选项导出失败</string>
     <string name="filenotfound">找不到文件</string>
     <string name="goto_main_try_again">请返回主屏幕，然后重试。</string>
     <string name="restartingapp">正在退出应用程序以应用设置。</string>
     <string name="ue_exported">用户条目已导出</string>
     <!--    Maintenance-->
+    <string name="master_password_missing">未设置主密码！  请在首选项 (%1$s) 中设置您的主密码</string>
     <string name="maintenance">维护</string>
     <string name="maintenance_shortname">维护</string>
     <string name="description_maintenance">提供了几个维护功能 (例如日志发送、日志删除)。</string>
+    <string name="database_cleanup">清除数据库</string>
     <string name="reset_db_confirm">你真的想重置数据库吗?</string>
+    <string name="reset_aps_results_confirm">您确实要重置存储的 APS 结果吗？</string>
     <string name="maintenance_settings">维护设置</string>
     <string name="maintenance_email">电子邮箱收件人</string>
     <string name="maintenance_amount">没有要发送的日志</string>
@@ -102,6 +121,7 @@
     <string name="engineering_mode_enabled">已启用工程模式</string>
     <string name="log_files">日志文件</string>
     <string name="nav_logsettings">日志设置</string>
+    <string name="miscellaneous">Miscellaneous</string>
     <string name="nav_resetdb">重置数据库</string>
     <string name="resettodefaults">重置为默认值</string>
     <!-- Maintenance -->
@@ -128,12 +148,23 @@
     <string name="prefdecrypt_issue_wrong_algorithm">不支持或未指定加密算法!</string>
     <!-- Custom Watchface -->
     <!-- Maintenance -->
+    <string name="wear_import_custom_watchface_title">选择自定义表盘</string>
     <string name="metadata_label_format">文件格式</string>
     <string name="metadata_label_created_at">创建于</string>
+    <string name="metadata_label_aaps_version">AAPS版本</string>
     <string name="metadata_label_aaps_flavour">构建变体</string>
     <string name="metadata_label_device_name">导出设备的患者姓名</string>
     <string name="metadata_label_device_model">导出设备型号</string>
     <string name="metadata_label_encryption">文件加密密钥。</string>
     <string name="metadata_format_new">新的加密格式</string>
     <string name="metadata_format_other">未知的导出格式</string>
+    <string name="unattended_settings_export">无人值守设置导出</string>
+    <string name="reset_aps_results">重置APS结果</string>
+    <string name="error_accessing_filesystem_select_aaps_directory_properly">访问文件系统时出错。正确选择AAPS目录。</string>
+    <string name="protection">保护</string>
+    <string name="aaps_directory">AAPS目录</string>
+    <string name="nsclient_version_does_not_match">AAPSClient 版本与 AAPS 版本不匹配。请更新。</string>
+    <string name="expand_category">展开目录</string>
+    <string name="configbuilder_bgsource_description">AAPS 应该从哪里获取数据？</string>
+    <string name="configbuilder_smoothing">平滑</string>
 </resources>

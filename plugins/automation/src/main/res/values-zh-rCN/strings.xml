@@ -6,6 +6,8 @@
     <string name="automation_missing_task_name">请输入任务的名称</string>
     <string name="automation_missing_trigger">请选择至少一个过滤条件</string>
     <string name="automation_missing_action">请指定至少一个操作。</string>
+    <string name="exportsettings_message">导出配置: %1$s</string>
+    <string name="export_settings_short">治疗文字：</string>
     <string name="alarm_message">警告: %1$s</string>
     <string name="alarm_short">报警:</string>
     <string name="message_short">消息:</string>
@@ -83,6 +85,22 @@
     <string name="lastboluscompared">上次大剂量时间 %1$s %2$s 分钟前</string>
     <string name="triggercoblabel">碳水</string>
     <string name="cobcompared">COB %1$s %2$.0f</string>
+    <string name="triggerHeartRate">心率</string>
+    <string name="triggerHeartRateDesc">心率 %1$s %2$.0f</string>
+    <string name="triggerSensorAgeLabel">传感器寿命</string>
+    <string name="triggerSensorAgeDesc">传感器寿命 %1$s %2$.1f 小时</string>
+    <string name="triggerCannulaAgeLabel">导管寿命</string>
+    <string name="triggerCannulaAgeDesc">导管寿命 %1$s %2$.1f 小时</string>
+    <string name="triggerPodChangeLabel">Pod 激活</string>
+    <string name="triggerPodChangeDesc">Pod 已激活</string>
+    <string name="triggerInsulinAgeLabel">胰岛素寿命</string>
+    <string name="triggerInsulinAgeDesc">胰岛素寿命 %1$s %2$.1f 小时</string>
+    <string name="triggerPumpBatteryAgeLabel">泵电池寿命</string>
+    <string name="triggerPumpBatteryAgeDesc">泵电池寿命 %1$s %2$.1f 小时</string>
+    <string name="triggerReservoirLevelLabel">胰岛素容量</string>
+    <string name="triggerReservoirLevelDesc">胰岛素容量 %1$s %2$.0f</string>
+    <string name="triggerPumpBatteryLevelLabel">泵电池等级</string>
+    <string name="triggerPumpBatteryLevelDesc">泵电池等级 %1$s %2$.0f</string>
     <string name="iob_u">IOB [U]:</string>
     <string name="distance_short">区 [m]:</string>
     <string name="recurringTime">重复的时间</string>
@@ -105,12 +123,20 @@
     <string name="system_automation">系统自动化</string>
     <string name="run_automations">运行自动化</string>
     <string name="add_automation">添加规则</string>
+    <string name="stop_processing">停止处理</string>
     <!--    Reminders-->
+    <string name="time_to_eat">吃饭时间到了！\n请运行大剂量向导，然后再次进行计算。</string>
     <string name="time_to_bolus">输注胰岛素时间到了！\n请运行大剂量向导，然后再次进行计算。</string>
+    <string name="error_setting_reminder">设置未来闹钟时出错</string>
     <!--    Autotune-->
+    <string name="autotune_profile_name">自动调整配置文件 %1$s</string>
     <string name="autotune_run">运行自动协调</string>
+    <string name="autotune_run_without_autoswitch">运行 Autotune 无需切换配置文件</string>
     <string name="autotune_run_with_autoswitch">运行 Autotune 并自动切换配置文件</string>
     <string name="autotune_run_with_error">上次 Autotune 运行期间出错</string>
     <string name="autotune_run_cancelled">检测到另一次自动调试运行，本次运行已取消</string>
     <!--    Steps count-->
+    <string name="triggerStepsCountDesc">计步数 每 %1$s 分钟 %2$s %3$.0f</string>
+    <string name="triggerStepsCountDropdownLabel">测量持续时间</string>
+    <string name="triggerStepsCountLabel">计步数</string>
 </resources>

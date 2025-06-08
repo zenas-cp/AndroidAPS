@@ -3,6 +3,7 @@
     <!-- SMS Communicator & OTP Authenticator -->
     <string name="smscommunicator">SMS短信通讯器</string>
     <string name="smscommunicator_shortname">手机SMS</string>
+    <string name="description_sms_communicator">使用SMS命令远程控制AAPS</string>
     <string name="smscommunicator_code_from_authenticator_for" comment="This is continuation of sentence: To [ACTION] reply with code">从验证码生成器应用获取%1$s的随机码，并附加PIN码</string>
     <string name="smscommunicator_otp_pin">验证码末尾强制附加的PIN码</string>
     <string name="smscommunicator_otp_pin_summary">在每次生成的一次性随机密码末尾，需要记住并强制附加的数字。</string>
@@ -18,9 +19,15 @@
     <string name="smscommunicator_otp_export_prompt">你确定要将OTP密钥复制到剪贴板？\n\n只有在验证器应用扫描二维码出现问题时，你才需要这么做。可能你想手动输入二维码，或者使用专用的应用程序配置硬件OTP令牌。</string>
     <string name="smscommunicator_otp_export_successful">将OTP密钥 (Base32 格式) 导出并复制到剪贴板。粘贴它到身份验证器或硬件OTP中！</string>
     <string name="smscommunicator_otp_step1_install_header">1. 安装身份验证器app</string>
+    <string name="smscommunicator_otp_step2_provisioning_header">2. 扫码设置 AAPS 验证码</string>
     <string name="smscommunicator_otp_step3_test_header">3. 测试一次性验证码</string>
     <string name="smscommunicator_otp_reset_header">重置身份验证器</string>
     <string name="smscommunicator_otp_install_info">在其他遥控手机上安装支持RFC 6238 TOTP令牌协议的应用程序。常用的免费应用有:\n • Authy\n • Google Authenticator\n • LastPass Authenticator\n • FreeOTP Authenticator</string>
+    <string name="smscommunicator_otp_reset_warning">通过重置身份验证器，您可以使所有已配置的身份验证器无效。您将需要再次设置它们！</string>
+    <string name="smscommunicator_otp_verification_ok">好的</string>
+    <string name="smscommunicator_otp_verification_ivalid_size">无效数据！</string>
+    <string name="smscommunicator_otp_verification_wrong_pin">PIN错误</string>
+    <string name="smscommunicator_otp_verification_wrong_otp">验证码错误</string>
     <string name="sms_wrong_code">错误的代码。命令取消</string>
     <string name="sms_timeout_while_waiting">等待上一次胰岛素泵通信完成时超时</string>
     <string name="smscommunicator_allowednumbers">允许的手机号码</string>
@@ -32,6 +39,7 @@
     <string name="smscommunicator_stops_ns_with_code">要禁用短信遥控服务，请回复验证码%1$s.\n\n请记住，你只能在AAPS闭环手机上重新激活此功能。</string>
     <string name="smscommunicator_stopped_sms">短信遥控服务已禁用。要重新激活它，请使用AAPS闭环手机。</string>
     <string name="smscommunicator_calibration_reply_with_code">要发送校准值 %1$.2f 回复如下代码 %2$s</string>
+    <string name="smscommunicator_bolus_failed">推注失败。在发送另一个命令之前验证真实状态！</string>
     <string name="smscommunicator_remote_bolus_min_distance_summary">一次远程遥控输注命令与下一次命令之间必须经过的最小分钟数</string>
     <string name="smscommunicator_remote_bolus_min_distance">两次短信遥控胰岛素输注的时间间隔</string>
     <string name="smscommunicator_remote_bolus_min_distance_caveat">为了您的安全，您需要添加至少两个电话号码。</string>
@@ -84,6 +92,9 @@
     <string name="smscommunicator_message_body">无效消息</string>
     <string name="smscommunicator_report_pump_unreachable_summary">如果触发泵连接丢失事件，则发送短信通知。</string>
     <string name="smscommunicator_pump_unreachable">泵连接丢失报告</string>
+    <string name="smscommunicator_set_lgs_reply_with_code">为了将循环模式切换到 LGS（低血糖暂停），请回复代码 %1$s</string>
+    <string name="smscommunicator_set_closed_loop_reply_with_code">为了将循环模式切换到闭环回复代码%1$s</string>
+    <string name="smscommunicator_current_loop_mode">当前循环模式：%1$s</string>
     <string name="wrong_format">格式错误</string>
     <string name="sms_actual_bg">血糖:</string>
     <string name="sms_last_bg">上次血糖：</string>
@@ -130,6 +141,7 @@
     <string name="error_in_basal_values">基础率数值错误</string>
     <string name="error_in_target_values">目标数值错误</string>
     <string name="error_in_isf_values">ISF数值错误</string>
+    <string name="profile_name_contains_dot">一些配置文件名称包含点。 NS不支持此功能。配置文件不会上传到NS。</string>
     <string name="invalid_profile_not_accepted">不接受来自NS的无效配置文件%1$s</string>
     <string name="view">查看</string>
     <string name="errors">错误</string>
@@ -141,6 +153,8 @@
     <string name="dia_short">DIA</string>
     <string name="target_short">TARG</string>
     <string name="basal_short">基础率</string>
+    <string name="isf_dynamic_label_warning">您的算法可以提供ISF的动态计算。以下值只能用作丢失数据时的备用值或仅用作参考值</string>
+    <string name="ic_dynamic_label_warning">您的算法可以提供IC的动态计算。低于 cen 的值仅用作丢失数据时的备用值或仅用作参考值</string>
     <!-- Actions -->
     <string name="actions">手动操作</string>
     <string name="description_actions">一些快速访问常用功能的按钮</string>
@@ -162,6 +176,8 @@
     <string name="patch_pump">Patch 泵</string>
     <!-- Overview -->
     <string name="show_statuslights">在主屏幕上显示状态指示灯</string>
+    <string name="statuslights_cage_warning">导管寿命警告阈值 [h]</string>
+    <string name="statuslights_cage_critical">导管寿命临界阈值 [h]</string>
     <string name="statuslights_iage_warning">胰岛素状态灯警示阀值[小时]</string>
     <string name="statuslights_iage_critical">胰岛素状态灯临界阀值[小时]</string>
     <string name="statuslights_sage_warning">传感器状态灯警示阀值[小时]</string>
@@ -175,7 +191,16 @@
     <string name="statuslights_bat_warning">胰岛素泵剩余电量状态灯警示阀值[百分比]</string>
     <string name="statuslights_bat_critical">胰岛素泵剩余电量状态灯临界阀值[百分比]</string>
     <string name="statuslights_copy_ns">从NS复制设置</string>
+    <string name="graph_long_scale_6h">6小时</string>
+    <string name="graph_long_scale_12h">12小时</string>
+    <string name="graph_long_scale_18h">18小时</string>
+    <string name="graph_long_scale_24h">24小时</string>
     <string name="a11y_graph">绘图</string>
+    <string name="a11y_graph_scale">选择图表刻度</string>
+    <string name="a11y_graph_scale_6h">图表刻度6小时</string>
+    <string name="a11y_graph_scale_12h">图表刻度12小时</string>
+    <string name="a11y_graph_scale_18h">图表刻度18小时</string>
+    <string name="a11y_graph_scale_24h">图表刻度24小时</string>
     <string name="a11y_insulin_label">胰岛素</string>
     <string name="chart_menu">图表菜单</string>
     <string name="a11y_bg_quality">血糖质量</string>
@@ -187,6 +212,8 @@
     <string name="overview_shortname">主页</string>
     <string name="description_overview">显示闭环的当前状态和大多数常用操作的按钮</string>
     <string name="overview_buttons_selection">按钮</string>
+    <string name="show_calibration_button_summary">将校准发送到 xDrip+（确保在应用程序间设置下的 xDrip+ 中启用“接受校准”）。</string>
+    <string name="show_cgm_button_summary">打开 xDrip+ 或 Dexcom 应用程序（您可以使用后退按钮返回 AAPS）。</string>
     <string name="not_available_full">不可用</string>
     <string name="constraints_violation">违反约束条件</string>
     <string name="change_your_input">更改您的输入!</string>
@@ -207,6 +234,12 @@
     <string name="thirdcarbsincrement">第三碳水化合物增量</string>
     <string name="cgm">CGM</string>
     <string name="default_temptargets">默认的临时目标</string>
+    <string name="eatingsoon_duration">尽快进食持续时间（分钟）</string>
+    <string name="eatingsoon_target">尽快进食目标值</string>
+    <string name="activity_duration">活动时长（分钟）</string>
+    <string name="activity_target">活动目标值</string>
+    <string name="hypo_duration">低血糖持续时间（分钟）</string>
+    <string name="hypo_target">低血糖目标值</string>
     <string name="fill_bolus_title">输注/充盈标准胰岛素剂量</string>
     <string name="button1">按钮1</string>
     <string name="button2">按钮2</string>
@@ -218,6 +251,7 @@
     <string name="short_tabtitles">标题名称缩写</string>
     <string name="overview_show_notes_field_in_dialogs_title">在治疗对话框中显示备注字段</string>
     <string name="deliverpartofboluswizard">大剂量向导执行计算，但只有这部分计算结果的胰岛素被输注。适用于SMB算法。</string>
+    <string name="deliver_part_of_boluswizard_reset_time">全力（100%）输注，如果血糖超过</string>
     <string name="enable_bolus_advisor">启用大剂量向导</string>
     <string name="enable_bolus_advisor_summary">在高血糖期间(\"预测大剂量\")，使用延迟吃饭的提醒功能，来替代大剂量向导结果</string>
     <string name="enablesuperbolus">在向导中启用超级大剂量</string>
@@ -229,14 +263,17 @@
     <!--    OverviewMenu-->
     <string name="overview_show_predictions">预测</string>
     <string name="overview_show_treatments">治疗</string>
+    <string name="overview_show_heartRate">心率</string>
     <string name="overview_show_deviation_slope">斜度偏差</string>
     <string name="overview_show_activity">活动</string>
     <string name="overview_show_bgi">血糖影响</string>
+    <string name="overview_show_sensitivity">灵敏度变化</string>
     <string name="overview_show_deviations">偏差</string>
     <string name="overview_show_cob">活性碳水化合物</string>
     <string name="overview_show_iob">活性胰岛素</string>
     <string name="overview_show_basals">基础率</string>
     <string name="overview_show_abs_insulin">胰岛素绝对值</string>
+    <string name="overview_show_variable_sens">可变灵敏度</string>
     <string name="prediction_shortname">预测</string>
     <string name="basal_shortname">基础率</string>
     <string name="deviation_shortname">偏差</string>
@@ -245,16 +282,25 @@
     <string name="abs_insulin_shortname">ABS</string>
     <string name="devslope_shortname">DEVSLOPE</string>
     <string name="treatments_shortname">治疗</string>
+    <string name="heartRate_shortname">心率</string>
+    <string name="sensitivity_shortname">灵敏度%</string>
+    <string name="variable_sensitivity_shortname">可变灵敏度</string>
     <string name="graph_scale">图形缩放</string>
     <string name="graph_menu_divider_header">绘图</string>
     <!-- Skins -->
+    <string name="temp_basal_overview_short_name">临时基础率:</string>
     <string name="classic_description">原始皮肤</string>
     <string name="lowres_description">低分辨率皮肤</string>
     <string name="buttonson_description">按钮总是显示在屏幕底部</string>
     <string name="largedisplay_description">大显示屏</string>
     <string name="skin">皮肤</string>
+
+    <string name="cannula_usage">使用:</string>
     <!--    Iob-->
     <!--    PersistentNotification-->
     <string name="description_persistent_notification">显示持续的通知, 其中简要概述了您的闭环正在做什么</string>
     <string name="old_data">旧数据</string>
+    <string name="steps_shortname">步骤</string>
+    <string name="overview_show_steps">步骤</string>
+    <string name="simple_mode_enabled">简单模式已启用</string>
 </resources>

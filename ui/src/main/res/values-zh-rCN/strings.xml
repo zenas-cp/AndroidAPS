@@ -13,9 +13,11 @@
     <string name="a11y_carb_reminder">设置提醒</string>
     <!--    Widget-->
     <string name="configure">配置透明度</string>
+    <string name="widget_description">AAPS小组件</string>
     <!--     Activities-->
     <string name="activity_monitor">活动监视器</string>
     <string name="do_you_want_reset_stats">您想要重置所有的统计信息吗？</string>
+    <string name="do_you_want_reset_tdd_stats">您想要重置每日总剂量统计数据吗？</string>
     <string name="statistics">统计</string>
     <string name="calculation_in_progress">正在进行计算</string>
     <string name="invalid_age">输入的年龄无效</string>
@@ -25,6 +27,7 @@
     <string name="age">年龄</string>
     <string name="weight_label">重量</string>
     <string name="most_common_profile">最常见的配置文件:</string>
+    <string name="survey_comment">注意：只有在此屏幕上可见的数据才会被匿名上传。 ID 已分配给此 AAPS 安装。如果您的主要配置文件发生更改，您可以再次提交数据，但让它运行至少一周，以便在范围内的时间内显示结果。感谢您的帮助。</string>
     <string name="glucose_type">血糖类型</string>
     <string name="bg_other">其他</string>
     <string name="bg_meter">血糖仪</string>

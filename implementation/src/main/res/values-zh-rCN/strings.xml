@@ -11,4 +11,8 @@
     <string name="in_range">在范围内</string>
     <string name="above" comment="above &quot;in range&quot;">上方</string>
     <string name="hba1c">糖化血红蛋白: </string>
+    <string name="detailed_14_days">14天详情</string>
+    <string name="night_tir">晚上TIR</string>
+    <string name="carbs_short">碳水化合物</string>
+    <string name="day_tir">白天TIR</string>
 </resources>

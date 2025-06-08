@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- NSClient -->
+    <string name="ns_cellular">使用蜂窝连接</string>
+    <string name="ns_wifi">使用WiFi连接</string>
     <string name="ns_wifi_ssids">WiFi SSID</string>
+    <string name="ns_charging">充电中</string>
+    <string name="ns_battery">使用电池</string>
     <string name="connection_settings_title">连接设置</string>
     <string name="ns_wifi_allowed_ssids">允许的 SSIDs (分号分隔)</string>
     <string name="ns_allow_roaming">允许在漫游中连接</string>
@@ -9,8 +13,11 @@
     <string name="ns_create_announcements_from_carbs_req_title">从碳水需求警报创建NS公告</string>
     <string name="ns_create_announcements_from_errors_summary">为错误对话框和本地警报创建Nightscout公告(在治疗标签下的护理记录里也可查看)</string>
     <string name="ns_create_announcements_from_carbs_req_summary">为碳水化合物需求警报创建Nightscout网站的公告</string>
+    <string name="description_ns_client">使用 v1 API 将您的数据与 Nightscout 同步</string>
+    <string name="description_ns_client_v3">使用 v3 API 将您的数据与 Nightscout 同步</string>
     <string name="blocked_by_charging">被充电选项阻止</string>
     <string name="blocked_by_connectivity">被连接选项阻止</string>
+    <string name="no_connectivity">无连接</string>
     <string name="unsupported_ns_version">不支持的 Nightscout 版本</string>
     <string name="openaps_short">OpenAPS</string>
     <string name="uploader_short">UPLD</string>
@@ -21,6 +28,11 @@
     <string name="ns_client_url">URL网址：</string>
     <string name="restart">重新启动</string>
     <string name="ns_client_url_title">Nightscout URL(网址)</string>
+    <string name="ns_client_url_dialog_message">输入你的 Nightscout 地址 (i.e. https://yoursitename.yourplatform.dom)</string>
+    <string name="ns_client_secret_title">Nightscout API 密钥</string>
+    <string name="ns_client_secret_dialog_message">输入您的 Nightscout API 密钥（Nightscout 变量中记录的至少 12 个字符的密钥）</string>
+    <string name="nsclient_token_title">Nightscout 令牌</string>
+    <string name="nsclient_token_dialog_message">输入在 Nightscout 管理工具中生成的管理员级别访问令牌（至少 17 个字符，不是您的 API 密钥！）</string>
     <string name="deliver_now">立即输注</string>
     <string name="queue">队列：</string>
     <string name="status">状态:</string>
@@ -56,6 +68,8 @@
     <string name="ns_alarm_urgent_stale_data_value_label">紧急陈旧数据阈值 [min]</string>
     <string name="ns_log_app_started_event">记录app启动事件到NS服务器</string>
     <string name="copy_existing_values">复制 NS 设置(如果存在的话)？</string>
+    <string name="ns_use_ws_title">连接WS</string>
+    <string name="ns_use_ws_summary">启用意味着：更快的更新、接收警报和公告以及与 v1 类似的更高的电池消耗。 NS 的所有其他上传者必须使用 v3 协议。</string>
     <!-- Tidepool -->
     <string name="summary_tidepool_username">你的Tidepool登录用户名，通常是你的邮件地址</string>
     <string name="title_tidepool_username">登录用户名</string>
@@ -69,17 +83,39 @@
     <string name="description_tidepool">数据上传到Tidepool</string>
     <string name="remove_all">删除全部</string>
     <string name="upload_now">现在上传</string>
+    <string name="not_connected">未连接</string>
+    <string name="read_only">只读</string>
+    <string name="working">工作中</string>
     <!-- Xdrip StatusLine -->
+    <string name="description_xdrip">发送数据到xDrip+</string>
+    <string name="xdrip_status_detailed_iob_title">显示详细的IOB</string>
+    <string name="xdrip_status_detailed_iob_summary">在表盘上将 IOB 分解为输注 IOB 和基础 IOB</string>
+    <string name="xdrip_status_show_bgi_title">显示BGI</string>
+    <string name="disabled_loop">Loop禁用</string>
+    <string name="xdrip_send_status_title">将状态线发送至 xDrip+</string>
+    <string name="xdrip_not_installed">xDrip+未安装</string>
+    <string name="xdrip_status_show_bgi_summary">将 BGI 添加到状态线</string>
+    <string name="xdrip_status_settings">xDrip+ 状态线已提升</string>
+    <string name="calibration_sent">校准发送至 xDrip+</string>
+    <string name="xdrip_local_broadcasts_summary">将葡萄糖和治疗数据发送至 xDrip+。必须选择数据源“xDrip+ Sync Follower”，并且必须在“设置”-“应用程序间设置”-“接受血糖/治疗”中启用数据接受</string>
+    <string name="xdrip_local_broadcasts_title">启用到 xDrip+ 的广播。</string>
     <!--    DataBroadcast-->
+    <string name="tizen_description">将数据广播到三星的 G-Watch Wear 应用程序 (Tizen OS)</string>
     <!-- GarminPlugin -->
+    <string name="garmin_description">连接 Garmin 设备（Fenix、Edge...）</string>
+    <string name="garmin_local_http_server_port">本地 HTTP 服务器端口</string>
+    <string name="garmin_local_http_server">本地 HTTP 服务器</string>
     <!--    Wear-->
     <string name="wear_shortname">手表</string>
+    <string name="description_wear">使用 Wea​​rOS 手表监控和控制 AAPS。</string>
     <string name="no_watch_connected">(无手表连接)</string>
     <string name="pump_status">泵状态</string>
     <string name="loop_status">闭环状态</string>
     <string name="wizard_result">计算. 向导:\n胰岛素: %1$.2fU\n碳水: %2$d克</string>
     <string name="quick_wizard_not_available">选定的快速向导不再可用，请刷新</string>
     <string name="quick_wizard_message">快速向导: %1$s\n胰岛素: %2$.2fU\n碳水: %3$d克</string>
+    <string name="user_action_not_available">所选用户操作 %1$s 不再可用，请刷新您的磁贴</string>
+    <string name="wear_action_tempt_cancel_message">取消正在运行的临时目标？</string>
     <string name="wear_action_tempt_unit_error">手表和手机上使用了不同的单位！</string>
     <string name="wear_action_tempt_min_bg_error">目标血糖最小值超出范围！</string>
     <string name="wear_action_tempt_max_bg_error">目标血糖最大值超出范围！</string>
@@ -87,27 +123,67 @@
     <string name="wear_settings">手表设置</string>
     <string name="wearcontrol_title">从手表上控制</string>
     <string name="wearcontrol_summary">设置临时目标并从手表中进行治疗操作。</string>
+    <string name="wear_broadcast_data">广播数据</string>
+    <string name="wear_broadcast_data_summary">广播数据到AAPS或AAPS客户端</string>
     <string name="wear_wizard_settings_summary">包含在向导中的计算结果：</string>
     <string name="wear_general_settings">常规设置</string>
     <string name="wear_notifysmb_title">在 SMB 上通知</string>
     <string name="wear_notifysmb_summary">在手表上像显示常规大剂量一样显示SMB微型大剂量</string>
+    <string name="wear_custom_watchface_settings">自定义表盘设置</string>
+    <string name="wear_custom_watchface_authorization_title">自定义表盘授权</string>
+    <string name="wear_custom_watchface_authorization_summary">授权加载的自定义表盘更改和锁定某些手表显示设置以适应表盘设计</string>
+    <string name="wear_custom_watchface">自定义表盘: %1$s</string>
+    <string name="wear_load_watchface">加载表盘</string>
+    <string name="wear_infos_watchface">信息表盘</string>
     <string name="wear_export_watchface">导出模板</string>
+    <string name="wear_new_custom_watchface_exported">自定义表盘模板已导出</string>
     <string name="resend_all_data">重新发送所有数据</string>
     <string name="open_settings_on_wear">在手表上打开设置</string>
+    <string name="cwf_infos_pref_locked">表盘锁定的首选项列表</string>
+    <string name="cwf_infos_pref_required">表盘所需的首选项列表</string>
+    <string name="cwf_infos_view_title">表盘中包含的字段列表</string>
     <string name="pump_fetching_data">正在尝试从胰岛素泵获取数据。</string>
+    <string name="pump_old_data">TDD：还是旧数据！无法从泵加载。</string>
     <string name="units_short">单位</string>
+    <string name="grams_short">克</string>
     <string name="hour_short">时</string>
+    <string name="no_active_profile">没有活动的配置文件切换！</string>
+    <string name="profile_message">配置文件：时移：%1$d 百分比：%2$d%%”</string>
+    <string name="target_only_aps_mode">目标仅适用于 APS 模式！</string>
     <string name="no_history">无历史数据！</string>
     <string name="temp_target">临时目标</string>
     <string name="until">直到</string>
     <string name="default_range">缺省范围</string>
     <string name="target">目标</string>
+    <string name="rate_duration">比率: %1$.2fU/h (%2$.2f%%)  时间 %3$d 分钟</string>
     <string name="no_profile">未加载配置文件</string>
     <string name="aps_only">仅在 APS 模式下应用！</string>
+    <string name="last_aps_result_na">最后结果不可用！</string>
     <string name="loop_status_closed">闭环</string>
     <string name="loop_status_open">开环</string>
     <string name="loop_status_disabled">闭环禁用</string>
     <string name="last_run">上次运行</string>
+    <string name="last_enact">上次发布</string>
     <string name="today">今天</string>
     <string name="weighted">权重</string>
+    <string name="full_xdrip_sync_comment">完全同步？这可能需要一段时间，在完成之前您将不会在 xDrip+ 中看到新数据。</string>
+    <string name="wear_action_loop_state_no_nsclient">此操作不支持 AAPSClient</string>
+    <string name="wear_action_loop_state_requires_duration">此动作需要持续时间</string>
+    <string name="wear_action_loop_state_pump_suspended">泵已暂停</string>
+    <string name="wear_action_loop_state_profile_invalid">配置文件无效</string>
+    <string name="wear_action_loop_state_unauthorized">请重试</string>
+    <string name="wear_action_loop_state_invalid">请求的LOOP状态无效</string>
+    <string name="wear_action_loop_state_title">LOOP状态</string>
+    <string name="wear_action_loop_state_changed_with_duration">%1$s 时长: %2$d 分钟</string>
+    <string name="wear_action_loop_state_now_closed">闭环</string>
+    <string name="wear_action_loop_state_now_lgs">LGS</string>
+    <string name="wear_action_loop_state_now_open">开环</string>
+    <string name="wear_action_loop_state_now_suspended">暂停</string>
+    <string name="wear_action_loop_state_now_resumed">恢复</string>
+    <string name="wear_action_loop_state_now_disabled">禁用</string>
+    <string name="wear_action_loop_state_now_enabled">启用</string>
+    <string name="wear_action_loop_state_now_superbolus">超级剂量</string>
+    <string name="wear_action_loop_state_now_invalid">无效</string>
+    <string name="wear_action_loop_state_now_pump_disconnected">泵已断开</string>
+    <string name="wear_action_loop_state_now_pump_reconnected">泵已重连</string>
 </resources>
