@@ -83,7 +83,6 @@
     <string name="insulin_fiasp">Fiasp®速效门冬胰岛素(超速效)</string>
     <string name="insulin_novorapid">诺和锐®/门冬胰岛素®</string>
     <string name="insulin_humalog">优泌乐®赖脯胰岛素</string>
-    <string name="insulin_actrapid">诺和灵®/优泌林 R®/\"常规\"人胰岛素</string>
     <string name="sensitivity_label">敏感度插件</string>
     <string name="sensitivity_adjust">敏感性插件允许 AAPS 调整胰岛素敏感性的临时或短暂变化（例如激素变化或输注部位吸收问题）。</string>
     <string name="sensitivity_edit">灵敏度插件为用户提供对基础率、I:C 比率和 ISF 的建议更改，可用于编辑配置文件。</string>
