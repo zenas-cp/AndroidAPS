@@ -40,3 +40,8 @@ jobs:
       with:
         name: aaps
         path: app/build/outputs/apk/full/release
+    - name: Archive wear artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: wear
+        path: wear/build/outputs/apk/full/release

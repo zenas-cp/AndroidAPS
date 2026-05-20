@@ -47,6 +47,7 @@
     <string name="fabric_upload">通过Fabric上传</string>
     <string name="unattended_settings_export_summary">启用此功能会将您的密码安全地存储在您的手机上</string>
     <string name="identification">身份识别 (email邮件地址, FaceBook账号 或 Discord账号等等)</string>
+    <!-- Provider-agnostic cloud export/import strings -->
     <string name="request">请求</string>
     <string name="apsmode_title">APS模式</string>
     <string name="setupwizard_preferred_aps_mode">首选的APS模式</string>

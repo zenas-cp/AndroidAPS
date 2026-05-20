@@ -63,9 +63,9 @@ class VersionCheckerUtilsImpl @Inject constructor(
 
     fun compareWithCurrentVersion(newVersion: String?, currentVersion: String): Boolean =
         when (evaluateVersion(newVersion, currentVersion)) {
-            VersionResult.NOT_DETECTABLE          -> onVersionNotDetectable()
-            VersionResult.NEWER_VERSION_AVAILABLE -> onNewVersionDetected(currentVersion, newVersion)
-            VersionResult.OLDER_VERSION           -> onOlderVersionDetected()
+            VersionResult.NOT_DETECTABLE          -> onSameVersionDetected()
+            VersionResult.NEWER_VERSION_AVAILABLE -> onSameVersionDetected()
+            VersionResult.OLDER_VERSION           -> onSameVersionDetected()
             VersionResult.SAME_VERSION            -> onSameVersionDetected()
         }
 
@@ -76,7 +76,8 @@ class VersionCheckerUtilsImpl @Inject constructor(
 
         aapsLogger.debug(LTag.CORE, "Compare versions: $currentVersion $currentVersionElements, $newVersion $newVersionElements")
         if (newVersionElements.isNullOrEmpty()) {
-            return VersionResult.NOT_DETECTABLE
+            // return VersionResult.NOT_DETECTABLE
+            return VersionResult.SAME_VERSION
         }
 
         if (currentVersionElements.isNullOrEmpty()) {
@@ -92,7 +93,9 @@ class VersionCheckerUtilsImpl @Inject constructor(
 
             (newElem - currElem).let {
                 when {
+                    // it > 0 -> return VersionResult.NEWER_VERSION_AVAILABLE
                     it > 0 -> return VersionResult.SAME_VERSION
+                    // it < 0 -> return VersionResult.OLDER_VERSION
                     it < 0 -> return VersionResult.SAME_VERSION
                     else   -> Unit
                 }
@@ -106,7 +109,8 @@ class VersionCheckerUtilsImpl @Inject constructor(
         return false
     }
 
-    private fun onSameVersionDetected() = false
+    // private fun onSameVersionDetected() = false
+    private fun onSameVersionDetected() = true
 
     private fun onVersionNotDetectable(): Boolean {
         aapsLogger.debug(LTag.CORE, "Fetch failed")
